@@ -21,7 +21,7 @@ a:hover{
 }
 /*header*/
 header{
-    background-color: #cf7f79    ;
+    background-color: #cf7f79;
     padding: 10px 0;
 }
 .navbar{
@@ -60,7 +60,7 @@ header{
     transition: scale 0.2s ease;
 }
 .action_btn:hover{
-    scale: 1.05;
+    transform: scale(1.05);
     background-color: #cf7f79;
 }
 /*dropdown menu*/
@@ -93,11 +93,11 @@ header{
     justify-content: center;
 }
 .action_btn:active{
-    scale: 0.95;
+    transform:scale(0.95);
 }
 /* hero*/
 section#hero{
-    height: calc(100vh-60px);
+    height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,7 +106,7 @@ section#hero{
 }
 #hero h1{
     font-size: 3rem;
-    margin-bottom:11rem;
+    margin-bottom:1rem;
 }
 /*responsive design*/
 @media (max-width: 992px){
@@ -119,7 +119,6 @@ section#hero{
     }
     .dropdown_menu{
         display: block;
-        ;
     }
 }
 @media (max-width: 576px){
