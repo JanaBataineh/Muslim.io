@@ -4,12 +4,34 @@
     box-sizing: border-box;
     font-family: 'open sans', sans-serif;
 }
+
 body{
     background-color: #f4f4f4;
-    background-image: url('niqap.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+#image-section {
+    height: 100vh; /* الصورة تغطي كامل الشاشة */
+    background-image: url('niqap.jpg'); /* رابط الصورة */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#image-section .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+#content-section {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
 }
 a{
     text-decoration: none;
@@ -21,6 +43,7 @@ a:hover{
 }
 /*header*/
 header{
+
     position: fixed;
     top:0;
     width: 100%;
@@ -56,6 +79,11 @@ header.scrolled{
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
+}
+.links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .action_btn{
     background-color: #462a26;
