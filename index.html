@@ -48,6 +48,7 @@
                         </p>
             </section>
         </main>
+
         <script >
             const toggleBtn=document.querySelector('.toggle_btn')
             const toggleBtnIcon=document.querySelector('.toggle_btn i')
@@ -60,7 +61,17 @@
                 ? 'fa-solid fa-xmark'
                 : 'fa-solid fa-bars'
             }
+            document.addEventListener("scroll",function(){
+                const header=document.querySelector("header");
+                if(window.scrolly>50){
+                    header.classList.add("scrolled");
+                }else{
+                    header.classlist.remove("scrolled");
+                }
+                });
+            
 
         </script>
+
 </body>
 </html>
